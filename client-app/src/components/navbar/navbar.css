@@ -1,0 +1,22 @@
+ul {
+    text-align: center;
+
+}
+img {
+    width: 40px;
+}
+i {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ul  li.logo  img{
+    margin-bottom: 40px;
+}
+
+
+ul li.setting {
+    margin-top: 280px;
+    text-decoration: none;
+}

@@ -3,6 +3,11 @@ import './App.css';
 import { jwtDecode } from 'jwt-decode';
 import Signup from './pages/sign/Sign Up/Signup';
 import Signin from './pages/sign/Sign In/Signin';
+import Chat from './pages/chat/Chat'
+import Contact from './pages/contact/Contact'
+import Messages from './pages/chat/MessagesBlock'
+
+// {isAuthenticated()? <Signup />: "You are Allowed to access this page"}
 
 function App() {
   const isAuthenticated = () => {
@@ -22,13 +27,20 @@ function App() {
   };
   
   return (
-    <BrowserRouter>
+    <>
+      <BrowserRouter>
         <Routes>
-            <Route path='/' element={<Signin />}></Route>
-            <Route path='/signup' element={<Signup />}></Route>
-            <Route path='/chat' element={isAuthenticated()? <Signup />: "You are Allowed to access this page"}></Route>
+            <Route path='/' element={<Signin/>} />
+            <Route path='chat' element={<Chat/>}>
+              <Route path='messages' element={<Messages/>} />
+              <Route path='contact' element= {<Contact/>}/>
+            </Route>
+            
         </Routes>
-    </BrowserRouter>
+      </BrowserRouter>
+
+    </>
+    
   );
 }
 

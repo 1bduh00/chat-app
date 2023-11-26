@@ -10,3 +10,16 @@ body
     font-family: var(--font-family);
     color: black;
 }
+
+
+.App {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding-top: 30px;
+  }
+  
+  
+  li {
+    list-style: none;
+  }
+  

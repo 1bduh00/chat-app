@@ -16,6 +16,10 @@ function Signin() {
     const [email , setEmail] = useState()
     const [password,setPassword] = useState()
 
+    // Start prepare data
+    
+    // End prepare data
+
     useEffect(()=>{
             if(Error){
                 const hideMessage = () => {

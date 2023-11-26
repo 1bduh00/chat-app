@@ -1,0 +1,45 @@
+.search-bar {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+}
+.title i {
+    color: rgb(85, 51, 236);
+    font-size: 28px;
+
+}
+
+.search-bar i {
+    color:white;
+}
+
+
+img {
+    width: 51px;
+}
+.msg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+.msg h3 {
+    font-size: 16px;
+}
+.msg p {
+    font-size: 12px;
+    color: #777;
+}
+
+.status {
+    font-size: 12px;
+    color: #777;
+}

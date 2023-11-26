@@ -1,0 +1,88 @@
+
+/* v header section starts */
+.msg-header {
+    background-color: #f8f9fa;
+    padding: 10px;
+  }
+
+  .profile-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-details {
+    margin-left: 15px;
+    
+  }
+  
+  .user-details h2 {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .user-details p {
+    /* margin-left: 18px ; */
+    color: #a39c9c;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  /* ********* */
+
+.main {
+    display: grid;
+    /* align-content: space-between; */
+    /* grid-template-rows: 100px auto; */
+    grid-template-columns:30%  auto;
+}
+.chat-page .msg-inbox {
+    
+}
+  .msg-page {
+    padding: 20px;
+  }
+
+  .incoming-msg,  .outgoing-msg {
+    display: flex;
+    align-items: flex-start; /* Align items to the start of the flex container */
+    margin-bottom: 15px;
+  }
+
+  .outgoing-msg {
+   
+    justify-content: flex-end;
+  }
+
+  .msg-bubble {
+    background-color: #ffffff; /* White background for the message bubble */
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%; /* Maximum width for the message bubble */
+  }
+  .msg-time {
+    font-size: 0.8em;
+    color: #6c757d; /* Bootstrap text-secondary color */
+    margin-left: 10px;
+  }
+
+  .msg-time p {
+    padding: 0;
+  }
+  .user-photo {
+    max-width: 40px; /* Adjust the size of the user photo as needed */
+    height: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+
+
+
+  }
